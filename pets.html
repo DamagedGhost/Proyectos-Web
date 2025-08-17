@@ -27,7 +27,7 @@
 
     <!-- Nav principal -->
     <div class="topnav" id="myTopnav" style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
- 
+
     <!-- Se importa la librería de iconos para mostrar un menú hamburguesa (bars) en pantallas pequeñas -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -97,27 +97,36 @@
 
 
     <!-- Productos destacados -->
-    <h1>Productos de InVETory</h1>
-    <div style="display: flex; justify-content: space-between; text-align: center; padding: 20px;">
-        <div>
-            <img src="https://www.koniglab.com/new_site/wp-content/uploads/2015/09/Vetanarcol-2023.png" alt="img_jarabe" width="100"><br>
-            <p><strong>Vetarnarcol</strong></p>
-            <p>Jarabe para cachorros</p>
-            <p>$14000</p>
+    <section>
+        <h1>Productos de InVETory</h1>
+        <div style="display: flex; justify-content: space-around; text-align: center; padding: 20px;">
+            <div class="card">
+                <img src="https://www.koniglab.com/new_site/wp-content/uploads/2015/09/Vetanarcol-2023.png" alt="img_jarabe" width="100"><br>
+                <p><strong>Vetarnarcol</strong></p>
+                <p>Jarabe para cachorros</p>
+                <p class="price"><button>$14000</button></p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSA27zvPv0GVSWHR1EdaIeYjpGfo3-heGHI8R9ztxN5PQ3h5x-Bd1bosm4DEYci5UOGgfQbjc_wATemUoQpXOwBuiFaPFFnSb2RzFXAy1z7Q3iE9aHHTXVbyg" alt="img_jarabe" width="120"><br>
+                <p><strong>Juguete Gato</strong></p>
+                <p>Raton Gris</p>
+                <p class="price"><button>$1500</button></p>
+            </div>
+            <div class="card">
+                <img src="https://felinus.cl/913-large_default/inaba-churu-sabor-atun.jpg" alt="img_jarabe" width="120"><br>
+                <p><strong>Churu</strong></p>
+                <p>Bocadillo para Gatos</p>
+                <p class="price"><button>$5000</button></p>
+                <script>
+                    document.querySelectorAll('.card button').forEach(button => {
+                        button.addEventListener('click', () => {
+                            alert('Producto añadido al carrito');
+                        });
+                    });
+                </script>
+            </div>
         </div>
-        <div>
-            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSA27zvPv0GVSWHR1EdaIeYjpGfo3-heGHI8R9ztxN5PQ3h5x-Bd1bosm4DEYci5UOGgfQbjc_wATemUoQpXOwBuiFaPFFnSb2RzFXAy1z7Q3iE9aHHTXVbyg" alt="img_jarabe" width="120"><br>
-            <p><strong>Juguete Gato</strong></p>
-            <p>Raton Gris</p>
-            <p>$1500</p>
-        </div>
-        <div>
-            <img src="https://felinus.cl/913-large_default/inaba-churu-sabor-atun.jpg" alt="img_jarabe" width="120"><br>
-            <p><strong>Churu</strong></p>
-            <p>Bocadillo para Gatos</p>
-            <p>$5000</p>
-        </div>
-    </div>
+    </section>
     <!-- FIN SECCIÓN DE PRODUCTOS DESTACADOS -->
 
 
