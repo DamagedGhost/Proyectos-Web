@@ -75,6 +75,14 @@
 }
 
 
+/* 
+    .card styles:
+    - Adds a subtle box-shadow for depth.
+    - Sets fixed width and height for uniform cards.
+    - Centers the card horizontally and its content vertically.
+    - Adds padding and rounded corners for a clean look.
+    - Smooth scale effect on hover for interactivity.
+*/
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 200px;
@@ -91,18 +99,29 @@
     align-items: center;
 }
 
+/* 
+    .card:hover:
+    - Slightly enlarges the card and reduces opacity for a visual effect.
+*/
 .card:hover {
     transform: scale(1.05);
     opacity: 0.9;
 }
 
-
+/* 
+    .price styles:
+    - Sets text color and font size for product price.
+*/
 .price {
-
     color: grey;
     font-size: 22;
 }
 
+/* 
+    .price button styles:
+    - Styles the purchase button with color, padding, rounded corners, and pointer cursor.
+    - Adds spacing and ensures button stands out.
+*/
 .price button {
     background-color: #04AA6D;
     color: white;
@@ -117,10 +136,63 @@
     border-radius: 8px;
 }
 
+/* 
+    .price button:hover:
+    - Changes button color and slightly enlarges it for feedback.
+*/
 .price button:hover {
     background-color: #45a049;
     transform: scale(1.05);
     opacity: 0.9;
     border-radius: 8px;
 }
+
+
+
+/* 
+.cardmap: 
+    Estilos para la tarjeta de mapa. 
+    - Fondo blanco para resaltar el contenido.
+    - Borde gris claro y esquinas redondeadas para una apariencia moderna.
+    - Espaciado interno y externo para separar visualmente la tarjeta.
+    - Centrado de texto para mejorar la presentación.
+
+.cardmap-img: 
+    Estilos para la imagen dentro de la tarjeta de mapa.
+    - Ancho reducido al 40% para mantener proporción y diseño responsivo.
+    - Altura automática para conservar la relación de aspecto.
+    - Bordes redondeados para coherencia visual con la tarjeta.
+    - Margen superior para separar la imagen del contenido superior.
+*/
+.cardmap {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.cardmap-img {
+    width: 40%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+/* Estilos para las referencias */
+.references {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
 
