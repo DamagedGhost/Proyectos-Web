@@ -2,73 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>InVETory - Tu tienda para mascotas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- se importa fuente para usar en la pagina-->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://agroshow.s3.us-east-2.amazonaws.com/logos/mbgx6k5olms2ob.png">
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: 'Lato', Arial, sans-serif;
+            background-color: #e2f2ff;
+        }
+        h1 {
+            color: green;
         }
     </style>
-    <title>Document</title>
 </head>
 
 
-<!--
-*    1. Breve historia del negocio (año de creación, fundadores) (Historia de InVETory)
-*    2. Ubicación y sucursales existentes           (lugar ficticio)
-*    3. Productos que venden y servicios entregados.        (productos invet)
--->
-
-<!--    
-*    • En cada sección debe agregar una imagen de referencia, y debe ser una imagen
-*    obtenida desde Internet, haciendo referencia a ésta a través de una dirección
-*    absoluta.
-
-*    • Los títulos de cada sección deben estar resaltados con etiquetas de encabezado.
-
-*    • Se solicita que en alguna parte de la página haga referencia a una lista ordenada o
-*    bien a una lista desordenada.
-
-*    • Cada sección debe estar creada bajo una etiqueta semántica.
-
-*    • Finalmente, debe agregar en la página una sección de referencias, en la indique tres
-*    enlaces de interés asociados al modelo del negocio que se describe.
-
-*    • Comparte la página web con el resto de la clase y responde las preguntas de tu
-*    profesor y compañeros.
--->
 
 
-
-
-
-<!-- body principal de la pagina InVET-->
 <body>
 
-    
+
+    <!-- Nav principal -->
+    <div class="topnav" id="myTopnav" style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
+ 
+    <!-- Se importa la librería de iconos para mostrar un menú hamburguesa (bars) en pantallas pequeñas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <a href="#home" class="active">Home</a>
+        <a href="#historia">Historia</a>
+        <a href="#sucursales">Sucursales</a>
+        <a href="#productos">Productos</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <!-- Se añade un script para manejar el menú responsive -->
+        <script>
+            /* Toggle entre añadir y eliminar la clase "responsive" a topnav cuando el usuario hace clic en el icono */
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </div>
+
+
+        
+    <!-- FIN Nav principal -->
+
+
     <!-- Sección de Historia -->
     <div>
-        <img src="https://agroshow.s3.us-east-2.amazonaws.com/logos/mbgx6k5olms2ob.png" alt="Historia de InVETory">
-        <h1 style="font-size:3em;">Historia de InVETory</h1>
-        <p>
-            InVET nació como una propuesta innovadora para apoyar a pequeñas empresas que comenzaban a desempeñar
-            el rol de veterinarias para mascotas. <br></br>
-            En sus inicios, nuestra plataforma estaba enfocada en la administración de servicios e inventarios,
-            facilitando la gestión y optimizando procesos para clínicas y centros veterinarios. <br></br>
-            Con el tiempo, nuestra visión fue evolucionando junto a las necesidades de nuestros clientes. <br></br>
-            Hoy, InVET se ha consolidado como una empresa dedicada al retail de productos de cuidado para mascotas,
-            ofreciendo una amplia variedad de artículos de calidad para el bienestar de los animales. <br></br>
-            Actualmente, contamos con sucursales en diferentes puntos del país, siendo nuestras principales sedes en Santiago,
-            Concepción y Talca, desde donde trabajamos para brindar el mejor servicio y atención. <br></br>
-            Nuestra historia está marcada por el compromiso y la pasión de nuestros fundadores:<br></br>
-            <strong>Diego Parra</strong>, Director de Ventas;<br></br>
-            <strong>Felipe Vásquez</strong>, líder del equipo de desarrollo web; <br></br>
-            <strong>Marcelo Mancilla</strong>, encargado de Relaciones Públicas.<br></br>
-            En InVET, seguimos creciendo con un único objetivo: mejorar la vida de las mascotas y de quienes las cuidan.
-        </p>
+        <section style="display: flex; align-items: center; gap: 30px;">
+            <img src="https://agroshow.s3.us-east-2.amazonaws.com/logos/mbgx6k5olms2ob.png" alt="Historia de InVETory" style="width: 350px; height: auto;">
+            <div>
+                <h1 style="font-size:2.5em; margin-bottom: 10px;">Historia de InVETory</h1>
+                <p style="color: #222; font-size: 1.1em; margin: 0;">
+                    InVET nació como una propuesta innovadora para apoyar a pequeñas empresas veterinarias.<br>
+                    Inicialmente, nuestra plataforma facilitaba la administración de servicios e inventarios.<br>
+                    Con el tiempo, evolucionamos para ofrecer productos de calidad para el bienestar animal.<br>
+                    Hoy, InVET es referente en retail de productos para mascotas, con sucursales en Santiago, Concepción y Talca.<br>
+                    Nuestro equipo fundador:<br>
+                    <strong>Diego Parra</strong> (Ventas), <strong>Felipe Vásquez</strong> (Desarrollo web), <strong>Marcelo Mancilla</strong> (Relaciones Públicas).<br>
+                    Seguimos creciendo para mejorar la vida de las mascotas y quienes las cuidan.
+                </p>
+            </div>
+        </section>
     </div>
-    <!-- FIN SECCIÓN DE HISTORIA -->
+    <!-- FIN Sección de Historia -->
 
 
     <!-- sección de sucursales -->
@@ -79,54 +87,58 @@
         <ul>
             <li>Santiago, Covadonga 876, San Bernardo, Región Metropolitana</li>
             <img src="https://i.gyazo.com/c74f54ec70481e6c881b7ed50fe95f5d.png" alt="santiago">
-            
             <li>Talca, Diecisiete Sur 544, Talca, Maule</li>
             <img src="https://i.gyazo.com/73a92e8bf5140eb1f0cf0f9b6b306915.png" alt="talca">
-
             <li>Concepción, Freire 1331, Concepción, Bío Bío</li>
             <img src="https://i.gyazo.com/4d4af75263f3a2700877a1597eb05c45.png" alt="concepcion">
         </ul>
-
+    </div>
     <!-- FIN SECCIÓN DE SUCURSALES -->
 
 
     <!-- Productos destacados -->
-
     <h1>Productos de InVETory</h1>
     <div style="display: flex; justify-content: space-between; text-align: center; padding: 20px;">
-
         <div>
-            <img src="https://www.koniglab.com/new_site/wp-content/uploads/2015/09/Vetanarcol-2023.png" alt="img_jarabe" width="120"><br>
+            <img src="https://www.koniglab.com/new_site/wp-content/uploads/2015/09/Vetanarcol-2023.png" alt="img_jarabe" width="100"><br>
             <p><strong>Vetarnarcol</strong></p>
             <p>Jarabe para cachorros</p>
             <p>$14000</p>
         </div>
-
         <div>
             <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSA27zvPv0GVSWHR1EdaIeYjpGfo3-heGHI8R9ztxN5PQ3h5x-Bd1bosm4DEYci5UOGgfQbjc_wATemUoQpXOwBuiFaPFFnSb2RzFXAy1z7Q3iE9aHHTXVbyg" alt="img_jarabe" width="120"><br>
             <p><strong>Juguete Gato</strong></p>
             <p>Raton Gris</p>
             <p>$1500</p>
         </div>
-
         <div>
             <img src="https://felinus.cl/913-large_default/inaba-churu-sabor-atun.jpg" alt="img_jarabe" width="120"><br>
             <p><strong>Churu</strong></p>
             <p>Bocadillo para Gatos</p>
             <p>$5000</p>
         </div>
-
     </div>
     <!-- FIN SECCIÓN DE PRODUCTOS DESTACADOS -->
 
 
+    <!-- referencias -->
+    <section>
+        <h1>referencias</h1>
+        <ul>
+            <li><a href="https://www.invet.cl">InVET</a></li>
+            <li><a href="https://www.felinus.cl">Felinus</a></li>
+            <li><a href="https://www.cruzverde.cl">Cruz Verde</a></li>
+        </ul>
+    </section>
+    <!-- FIN SECCIÓN DE REFERENCIAS -->
 
 
-    </div>
-     <!-- footer: trademark -->
-    <footer>
-        <p>&copy; 2023 Pets Inc.</p>
+    <!-- footer: trademark -->
+    <footer class="companyname">
+        &copy; 2025 Invet SpA.
     </footer>
+    <!-- FIN FOOTER -->
+
 
 </body>
 </html>
