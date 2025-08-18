@@ -1,3 +1,29 @@
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    background: linear-gradient(45deg, rgba(7, 174, 234, 0.377) 0%, rgba(42, 243, 221, 0.377) 50%, rgba(43, 245, 152, 0.377) 100%);
+    opacity: 0.97;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: green;
+}
+
+
+::-webkit-scrollbar{
+    background: transparent;
+    width: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    /* https://grabient.com/HQBgnAbANMAcCsAWGB2EAmKBaEwCMII2ueKKM6AzNDsImJrRAccJWHq3uubSJbBggIKIA?style=linearGradient&steps=2&angle=0 */
+
+    background: linear-gradient(0deg, rgba(7, 174, 234, 1.000) 0.000%, rgba(43, 245, 152, 1.000) 100.000%);
+    border-radius: 100px;
+}
+
+
 /*
     .topnav styles:
     - Sets a dark background color (#333) for the navigation bar.
@@ -72,6 +98,14 @@
         display: block;
         text-align: left;
     }
+}
+
+.historia {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -181,18 +215,20 @@
     margin-top: 5px;
 }
 
-
-
-
-
-
-
-/* Estilos para las referencias */
-.references {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
+.c {
+    display:block;
+    margin-top:10px;
+    color:#555;
 }
 
-
+.references {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin: 24px 0 0 0;
+    color: #333;
+    clear: both;
+    padding: 16px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    font-size: 16px;
+    line-height: 1.6;
+}
