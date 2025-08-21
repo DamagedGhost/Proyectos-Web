@@ -8,9 +8,8 @@
 </head>
 
 <body>
-    <!-- ESTRUCTURA BASE-->
 
-    <!-- ENCABEZADO-->
+    <!-- =============== ENCABEZADO =============== -->
     <header>
         <!-- NAV (lista)(secciones van de lado)-->
         <nav class="top-nav">
@@ -34,40 +33,77 @@
             </div>
         </nav>
     </header>
+    <!-- =============== FIN ENCABEZADO =============== -->
 
-    
-<!-- CONTENIDO PRINCIPAL (Slideshow separado del nav)-->
-<section class="slideshow-section">
-    <div class="slideshow">
-        <div class="slide-fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="slide1.jpg" style="width:100%">
-            <div class="text">Descripción del sushi</div>
-        </div>
-        <div class="slide-fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="slide2.jpg" style="width:100%">
-            <div class="text">Descripción del sushi</div>
-        </div>
-        <div class="slide-fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="slide3.jpg" style="width:100%">
-            <div class="text">Descripción del sushi</div>
-        </div>
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-</section>
-<!-- FIN ENCABEZADO-->
-        <!-- Productos destacados -->
+    <!-- ============= CONTENIDO PRINCIPAL (Slideshow separado del nav) ================-->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://comerjapones.com/wp-content/uploads/sakura-ya-sushi-moriawase.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://comerjapones.com/wp-content/uploads/sakura-ya-sushi-moriawase.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://comerjapones.com/wp-content/uploads/sakura-ya-sushi-moriawase.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-- =============== FIN ENCABEZADO =============== -->
+
+    <!-- =========== Productos destacados =========== -->
     <section>
         <div style="display: flex; justify-content: space-around; text-align: center; padding: 20px 430px;">
             <div class="card">
@@ -120,8 +156,9 @@
                 <p class="price"><button>"signo mas"</button></p>
             </div>
     </section>
+    <!-- =============== FIN SECCIÓN DE PRODUCTOS DESTACADOS =============== -->
 
-<!-- SECCIÓN LOCAL-->
+<!-- =============== SECCIÓN LOCAL =============== -->
 <section class="local">
     <h1 class="tituloL">¿Dónde nos puedes encontrar?</h1>
     <p class="textoL">Estamos ubicados en Freire 720, 8050000 San Bernardo, Región Metropolitana. Nos puedes contactar a traves de redes sociales</p>
@@ -133,9 +170,9 @@
         <img src="alokike.png" alt="Telegram" height="50px">
     </ul>
 </section>
-<!-- FIN SECCIÓN LOCAL-->
+<!-- =============== FIN SECCIÓN LOCAL =============== -->
 
-<!-- SECCIÓN ELEGIRNOS -->
+<!-- =============== SECCIÓN ELEGIRNOS =============== -->
 <section class="elegirnos">
     <h1 class="tituloE">¿Por qué elegirnos?</h1>
     <ul class="listaE">
@@ -151,7 +188,7 @@
         <button>Subscribe</button>
     </ul>
 </section>
-<!-- FIN SECCIÓN ELEGIRNOS-->
+<!-- ============ FIN SECCIÓN ELEGIRNOS ============ -->
 
 <!-- FOOTER (derechos de autor) ()-->
 <footer>
