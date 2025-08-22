@@ -273,13 +273,11 @@ a.price:hover {
     justify-content: right;
     height: 300px;
     background-image: url('img/local.jpg');
-    border-radius: 50%;
 
 }
 
 .redes{
     width: 50%;
-    margin-left: 200px;
     offset-distance: 2px;
     justify-content: left;
     align-items: center;
@@ -292,8 +290,23 @@ a.price:hover {
 
 }
 
+.localint {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 17px;
+}
 
-
+.localout {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 
 /* ---------------- LOCAL ---------------- */
 
@@ -330,8 +343,40 @@ a.price:hover {
 }
 
 .local-text {
-margin-left: 120px;        
+margin-right: auto;
+margin-left: 120px;
+margin-bottom: 40px;
 }
+
+.correoE {
+    color: #606060;
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    resize: none;
+    textarea {
+        border: none;
+        outline: none;
+        resize: none;
+        border-radius: 5px;
+        font-size: 19px;
+    }
+}
+
+.botonE {
+    background-color: #606060;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 19px;
+    border-radius: 5px;
+}
+
 
 /* ---------------- FOOTER ---------------- */
 .footer {
@@ -346,9 +391,9 @@ margin-left: 120px;
 }
 
 .local-container {
-    display: flex;             
-    justify-content: space-between;
-    align-items: center;    
-    gap: 2px;                 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 2px;
 }
 
