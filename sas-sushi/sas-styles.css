@@ -50,14 +50,33 @@ body {
 /* ---------------- SLIDESHOW ---------------- */
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    width: 100vw;
+    aspect-ratio: 21 / 9;
     position: relative;
-    margin: auto;
+    margin: 0;
+    overflow: hidden;
+    max-height: 43vw; /* 100vw / (21/9) = 42.857vw */
 }
 
 /* Hide the images by default */
 .mySlides {
     display: none;
+    width: 100vw;
+    aspect-ratio: 21 / 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 43vw;
+}
+
+/* Slide image with dark overlay */
+.slide-image {
+    width: 100vw;
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.5);
+    max-height: 43vw;
 }
 
 /* Next & previous buttons */
@@ -70,19 +89,23 @@ body {
     padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    z-index: 2;
+    background: rgba(0,0,0,0.3);
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+.prev {
+    left: 0;
+}
+
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
@@ -90,21 +113,26 @@ body {
 /* Caption text */
 .text {
     color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
+    font-size: 2rem;
+    padding: 16px 24px;
     position: absolute;
-    bottom: 8px;
-    width: 100%;
+    bottom: 40px;
+    width: 100vw;
     text-align: center;
+    z-index: 2;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
+    font-size: 1rem;
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    left: 0;
+    z-index: 2;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
 }
 
 /* The dots/bullets/indicators */
@@ -112,15 +140,26 @@ body {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 0 4px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    position: relative;
+    z-index: 2;
 }
 
 .active, .dot:hover {
     background-color: #717171;
+}
+
+/* Dots container */
+.dots-container {
+    position: absolute;
+    bottom: 16px;
+    width: 100vw;
+    text-align: center;
+    z-index: 2;
 }
 
 /* Fading animation */
@@ -132,11 +171,6 @@ body {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-}
-
-.slide-image {
-    width: 100%;
-    height: auto;
 }
 
 
@@ -238,6 +272,8 @@ a.price:hover {
     align-items: right;
     justify-content: right;
     height: 300px;
+    background-image: url('img/local.jpg');
+    border-radius: 50%;
 
 }
 
@@ -268,6 +304,8 @@ a.price:hover {
     color: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    list-style-position: inside;
+    list-style-type: square;
 }
 .elegirnos li {
     text-align: center;
