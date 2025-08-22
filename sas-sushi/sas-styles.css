@@ -183,7 +183,12 @@ body {
     padding: 5px;
     margin: 5px;
 }
-
+.prod {
+    font-size: 2rem;
+    color: #444444;
+    text-align: center;
+    margin: 20px 0;
+}
 .card {
     background-color: white;
     border-radius: 5px;
@@ -389,6 +394,18 @@ margin-bottom: 40px;
     width: 100%;
     z-index: 999;
 }
+.footer a {
+    margin-bottom:  10px;  
+    color: rgb(112, 118, 124);
+    text-decoration: none;
+}
+
+.footer ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 .local-container {
     display: flex;
@@ -396,4 +413,6 @@ margin-bottom: 40px;
     align-items: flex-end;
     gap: 2px;
 }
+
+
 
