@@ -146,14 +146,15 @@ body {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
+    margin: 5px;
 }
 
 .card {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    margin: 5px;
     padding: 15px;
     width: 200px;
 }
@@ -246,6 +247,13 @@ a.price:hover {
     offset-distance: 2px;
     justify-content: left;
     align-items: center;
+    
+}
+.redes img {
+    margin: 0px;
+    vertical-align: middle;
+    margin-right: 0px;
+
 }
 
 
@@ -256,17 +264,36 @@ a.price:hover {
 .elegirnos{
     background-color: #A33A2F;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     color: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+.elegirnos li {
+    text-align: center;
+    padding: 0px 11px;
+    font-size: 15px;
+    bottom: 8px;
+    width: 100%;
+    margin-left: 0%;
+}
 
+.local-imgs {
+    display: flex;             
+    gap: 10px;    
+    border-radius: 8px;     
+    object-fit: cover;           
+}
 
+.local-imgs img {
 
+    object-fit: cover;         
+    border-radius: 8px;         
+}
 
-
-
+.local-text {
+margin-left: 120px;        
+}
 
 /* ---------------- FOOTER ---------------- */
 .footer {
@@ -279,3 +306,11 @@ a.price:hover {
     width: 100%;
     z-index: 999;
 }
+
+.local-container {
+    display: flex;             
+    justify-content: space-between;
+    align-items: center;    
+    gap: 2px;                 
+}
+
