@@ -46,6 +46,9 @@ body {
 .nav-actions { 
     float: right; 
 }
+.nav-actions iniciar-sesion{ 
+    border-radius: 10px;
+}
 
 /* ---------------- SLIDESHOW ---------------- */
 /* Slideshow container */
@@ -178,10 +181,11 @@ body {
 
 .card-list{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
     padding: 5px;
-    margin: 5px;
+    margin: 5px auto;
+    gap: 20px;
 }
 .prod {
     font-size: 2rem;
@@ -191,17 +195,23 @@ body {
 }
 .card {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 25px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 5px;
     padding: 15px;
     width: 200px;
+    display: flex;           
+    flex-direction: column;  
+    justify-content: space-between
 }
 
 .card img {
+    display: block;
     border-radius: 5px;
-    max-width: 100%;
-    height: auto;
+    max-width: 130px;
+    height: 110px;
+    margin: 0 auto 10px auto;
+    object-fit: cover;
 }
 
 .card p {
