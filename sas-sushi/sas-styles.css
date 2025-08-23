@@ -324,16 +324,19 @@ a.price:hover {
     color: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    list-style-position: inside;
-    list-style-type: square;
+    
+    
 }
 .elegirnos li {
-    text-align: center;
-    padding: 0px 11px;
+    text-align: left;
     font-size: 15px;
     bottom: 8px;
-    width: 100%;
-    margin-left: 0%;
+    list-style-position: inside;
+    list-style-type: square;   
+}
+.elegirnos ul {
+    display: inline-block;
+    text-align: left;
 }
 
 .local-imgs {
@@ -358,30 +361,27 @@ margin-bottom: 40px;
 .correoE {
     color: #606060;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin: 50px;
+    gap: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 10px;
-    resize: none;
+    justify-content: center;
     textarea {
         border: none;
         outline: none;
         resize: none;
         border-radius: 5px;
-        font-size: 19px;
+        font-size: 16px;
     }
 }
 
 .botonE {
     background-color: #606060;
     color: #ffffff;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 19px;
     border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 16px;
 }
 
 
