@@ -304,21 +304,51 @@ a.price:hover {
 }
 /* ---------------- LOCAL ---------------- */
 
-.elegirnos{
+.elegirnos {
     background-color: #A33A2F;
     text-align: center;
     padding: 50px;
     color: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    list-style-position: inside;
-    list-style-type: square;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+.elegirnos textarea {
+    resize: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+}
 
+.elegirnos li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    list-style-position: inside;
+    list-style-type: square;
+    text-align: left;
+}
 
+.correoE{
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 
-
+.botonE{
+    background-color: #606060;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #333;
+    cursor: pointer;
+}
 
 
 /* ---------------- FOOTER ---------------- */
