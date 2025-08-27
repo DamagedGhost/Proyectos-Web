@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #B8AEA6; font-family: 'Montserrat', sans-serif; }
+    h2, h1 { color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,0.7); }
+    .carousel-caption { background: rgba(0,0,0,0.5); border-radius: 1rem; }
+    .card-title { font-weight: 700; }
+    .card-footer { background: none; border: none; }
+    .CEO { background-image: url('img/sushimicky.png'); background-size: cover; background-position: center; min-height: 60vh; }
+    .CEO img { box-shadow: 0 4px 8px rgba(255,255,255,0.2); }
+    .list-group-item { background: rgba(255,255,255,0.8); }
+    footer { background-color: #333; color: #f2f2f2; }
+    @media (max-width: 768px) {
+      .CEO img { width: 120px !important; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/sas-sin-fondo.png" alt="Logo" height="40"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#locales">Locales</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+        </ul>
+        <div class="d-flex gap-3">
+          <a href="#login" title="Iniciar sesión">
+            <img src="https://dulzurareal.cl/Content/Image/Usuario.png" alt="Iniciar sesión" height="30"/>
+          </a>
+          <a href="#carrito" title="Carrito de compras">
+            <img src="https://img.freepik.com/vector-premium/ilustracion-vectorial-silueta-carrito-compras-fondo-blanco_948056-1018.jpg" alt="Carrito de compras" height="30"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div style="height:70px"></div> <!-- Spacer for fixed navbar -->
+
+  <!-- Carousel -->
+  <div id="carouselSushi" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselSushi" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselSushi" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselSushi" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/Banner-1.jpg" class="d-block w-100" alt="Banner 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Escoge tu pieza sas ideal</h2>
+          <p>El mejor sushi keto y oriental con ingredientes frescos</p>
+          <a href="#productos" class="btn btn-warning">Mostrar menú</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.zarla.com/images/zarla-sushi-website-examples-5040x4032-20240715.jpeg?crop=16:9,smart&width=1200&dpr=2" class="d-block w-100" alt="Banner 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Frescura y sabor en cada roll</h2>
+          <p>Prueba combinaciones únicas creadas por nuestros chefs</p>
+          <a href="#productos" class="btn btn-warning">Descubrir más</a>
+        </div>
+      </div>
+      <div class="carousel-item"></div>
+        <img src="https://a-static.besthdwallpaper.com/sushi-rolls-japanese-food-wallpaper-1920x1080-105336_48.jpg" class="d-block w-100" alt="Banner 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Tu experiencia oriental</h2>
+          <p>Calidad, tradición y creatividad en cada bocado</p>
+          <a href="#productos" class="btn btn-warning">Haz tu pedido</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSushi" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselSushi" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Productos -->
+  <section id="productos" class="container mb-5">
+    <h2 class="mb-4 text-center">PRODUCTOS</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="https://tofuu.getjusto.com/orioneat-local/resized2/nynhoS4f2BRkKBkSa-2400-x.webp" class="card-img-top" alt="sasshi_burger">
+          <div class="card-body">
+            <h5 class="card-title">Sasshi Burger</h5>
+            <p class="card-text">Rolls, sashimis y makis crujientes en un solo plato. ¡Explosión de sabor!</p>
+          </div>
+          <div class="card-footer text-end">
+            <span class="fw-bold text-success">$4.990</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="https://tofuu.getjusto.com/orioneat-local/resized2/gTGzpysCH2XhssL4h-300-x.webp" class="card-img-top" alt="sushipleto">
+          <div class="card-body">
+            <h5 class="card-title">Sushipleto Sas</h5>
+            <p class="card-text">Arroz como pan, pescado fresco y vegetales crujientes. ¡Sushi estilo burger!</p>
+          </div>
+          <div class="card-footer text-end">
+            <span class="fw-bold text-success">$5.490</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="https://tofuu.getjusto.com/orioneat-local/resized2/5KFQNRjRa73tsJNjD-x-2400.webp" class="card-img-top" alt="combo_sushi">
+          <div class="card-body">
+            <h5 class="card-title">Combo Sushi Mix</h5>
+            <p class="card-text">Variedad de rolls y makis para compartir y disfrutar frescura total.</p>
+          </div>
+          <div class="card-footer text-end">
+            <span class="fw-bold text-success">$6.990</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 mt-2">
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="https://tofuu.getjusto.com/orioneat-local/resized2/dafJpSGznFSNWN8Jo-1000-x.webp" class="card-img-top" alt="sasroll">
+          <div class="card-body">
+            <h5 class="card-title">SasRoll</h5>
+            <p class="card-text">Rolls, sashimis y makis crujientes en un solo plato. ¡Explosión de sabor!</p>
+          </div>
+          <div class="card-footer text-end">
+            <span class="fw-bold text-success">$4.990</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="https://imag.bonviveur.com/pollo-en-salsa-teriyaki.jpg" class="card-img-top" alt="Teriyakisas">
+          <div class="card-body">
+            <h5 class="card-title">Teriyaki Sas</h5>
+            <p class="card-text">Jugoso pollo glaseado con salsa teriyaki, acompañado de arroz y verduras, una mezcla dulce y salada que encanta a todos.</p>
+          </div>
+          <div class="card-footer text-end">
+            <span class="fw-bold text-success">$5.490</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="https://images.getrecipekit.com/20230606152327-25_Instant_ramen.jpg?aspect_ratio=16:9&quality=90&" class="card-img-top" alt="ramen">
+          <div class="card-body">
+            <h5 class="card-title">Ramen</h5>
+            <p class="card-text">Caldo aromático con fideos japoneses, huevo y proteínas, un plato reconfortante que combina tradición y sabor en una sola sopa.</p>
+          </div>
+          <div class="card-footer text-end">
+            <span class="fw-bold text-success">$6.990</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CEO -->
+  <section class="CEO container my-5 text-center py-5">
+    <h2 class="mb-3">"ta rico el susi"</h2>
+    <img src="img/el_ceo.png" alt="ceo" class="img-fluid rounded-circle mb-2" width="200">
+    <p class="lead">Micky Daddy, CEO de Sas Sushi</p>
+  </section>
+
+  <!-- Locales -->
+  <section id="locales" class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2 class="mb-3">¿Dónde nos puedes encontrar?</h2>
+        <p>Estamos ubicados en Freire 720, 8050000 San Bernardo, Región Metropolitana.</p>
+        <p>Nos puedes contactar a través de redes sociales</p>
+        <div class="d-flex gap-3">
+          <img src="img/insta.png" alt="Instagram" height="30">
+          <img src="img/whats.png" alt="WhatsApp" height="44" style="vertical-align: middle;">
+          <img src="img/alokike.png" alt="Telegram" height="28">
+        </div>
+      </div>
+      <div class="col-md-6 d-flex gap-3">
+        <img src="img/localint.png" alt="local interior" class="img-fluid rounded shadow">
+        <img src="img/localout.png" alt="local exterior" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="container my-5">
+    <h1 class="mb-4 text-center">¿Por qué elegirnos?</h1>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">Puedes probar nuestras variedades de sushis y inspiraciones.</li>
+      <li class="list-group-item">Sushis creados por chefs capacitados con cursos especiales en gastronomía japonesa.</li>
+      <li class="list-group-item">Utilizamos los productos más frescos, asegurando calidad en cada roll.</li>
+      <li class="list-group-item">Nuestra comida se prepara con todo el estilo oriental traído directamente a tu mesa.</li>
+      <li class="list-group-item">¿Buscas ser parte?, contáctanos para ser parte de la familia de Sas Sushis!</li>
+    </ul>
+    <form class="row g-2 justify-content-center">
+      <div class="col-md-4">
+        <input type="email" class="form-control" placeholder="Email">
+      </div>
+      <div class="col-md-4">
+        <input type="tel" class="form-control" placeholder="Teléfono">
+      </div>
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-warning w-100">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 mt-5">
+    <div class="container text-center">
+      <div class="mb-2">
+        <a href="feature" class="text-white me-2">Features</a>|
+        <a href="About" class="text-white mx-2">About</a>|
+        <a href="Testimonials" class="text-white mx-2">Testimonials</a>|
+        <a href="Contact" class="text-white mx-2">Contact</a>|
+        <a href="Download" class="text-white ms-2">Download</a>
+      </div>
+      <p>Contacto: <a href="mailto:info@sas-sushi.com" class="text-warning">info@sas-sushi.com</a></p>
+      <p>Freire 720, 8050000 San Bernardo, Región Metropolitana, Chile</p>
+      <p>Derechos reservados &copy; 2025</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
