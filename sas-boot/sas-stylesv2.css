@@ -116,4 +116,7 @@ a.price {
     object-fit: cover;
     border-radius: 10px;
 }
-
+.bg-danger {
+    background-color: #821f16 !important;
+    color: white;
+}
