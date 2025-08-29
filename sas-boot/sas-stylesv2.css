@@ -1,103 +1,97 @@
-/* Productos */
-.product-card {
-  background-color: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, opacity 0.3s;
-  padding: 1rem;
-  display: center flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
+/* ---- Estilos generales ---- */
+body {
+  background-color: #B8AEA6;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.product-card:hover {
-  transform: scale(1.05);
-  opacity: 0.95;
+h1,
+h2 {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-.product-card img {
-  border-radius: 0.5rem;
-  max-height: 180px;
-  object-fit: cover;
-  margin-bottom: 10px;
+/* ---- Carousel ---- */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
 }
 
-.product-card h5 {
-  font-weight: bold;
-  margin-top: 0.5rem;
-  color: #333;
+/* ---- Cards ---- */
+.card-title {
+  font-weight: 700;
 }
 
-.product-card p {
-  font-size: 0.95rem;
-  margin: 0.5rem 0;
+.card-footer {
+  background: none;
+  border: none;
 }
 
-/* Botón de precio */
-.price {
-  background-color: #821f16;
-  color: #fff !important;
-  display: inline-block;
-  padding: 0.6rem 1rem;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
+/* ---- Sección CEO ---- */
+.CEO {
+  background-image: url('img/sushimicky.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
 }
 
-.price:hover {
-  background-color: #45a049;
-}
-/* Productos */
-.product-card {
-  background-color: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, opacity 0.3s;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.CEO img {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
-.product-card:hover {
-  transform: scale(1.05);
-  opacity: 0.95;
+/* ---- Listas ---- */
+.list-group-item {
+  background: rgba(255, 255, 255, 0.8);
 }
 
-.product-card img {
-  border-radius: 0.5rem;
-  max-height: 180px;
-  object-fit: cover;
-  margin-bottom: 10px;
+/* ---- Footer ---- */
+footer {
+  background-color: #333;
+  color: #f2f2f2;
 }
 
-.product-card h5 {
-  font-weight: bold;
-  margin-top: 0.5rem;
-  color: #333;
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .CEO img {
+    width: 120px !important;
+  }
 }
 
-.product-card p {
-  font-size: 0.95rem;
-  margin: 0.5rem 0;
+
+/* --------- Productos ----------- */
+/* Asegura que la tarjeta en sí tenga propiedades flex adecuadas, aunque las clases col de Bootstrap manejan gran parte de esto */
+.card { /* Apuntando directamente a la clase card de Bootstrap */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Asegura que las tarjetas en una fila tengan la misma altura */
+}
+.card-img-top { /* Apuntando a la clase de imagen de Bootstrap */
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 240px; /* Establece una altura fija para las imágenes */
+    object-fit: cover; /* Aplica object-fit: cover */
+    margin-bottom: 0.5rem;
+}
+.card-title {
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #333;
+}
+.card-text { /* Apuntando a la clase de párrafo de Bootstrap */
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+    flex-grow: 1; /* Permite que el texto ocupe el espacio disponible */
+}
+a.price {
+    background-color: #821f16;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    margin-top: auto; /* empuja hacia abajo */
 }
 
-/* Botón de precio */
-.price {
-  background-color: #821f16;
-  color: #fff !important;
-  display: inline-block;
-  padding: 0.6rem 1rem;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
 
-.price:hover {
-  background-color: #45a049;
-}
