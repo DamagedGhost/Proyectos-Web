@@ -101,4 +101,25 @@ a.price {
     margin-top: auto; /* empuja hacia abajo */
 }
 
+.local {
+    display: flex;
+    justify-content: center;
+    padding: 5vw 8vw; /* antes 60px 120px */
+}
 
+
+.localImages {
+    display: flex;
+    gap: 0; /* pegadas entre sí */
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.localImages img{
+    width: 50%; /* en vez de 400px */
+    max-width: 400px; /* mantiene tope */
+    height: auto; /* antes 200px fijo */
+    aspect-ratio: 2 / 1; /* conserva forma rectangular */
+    object-fit: cover;
+    border-radius: 10px;
+}
