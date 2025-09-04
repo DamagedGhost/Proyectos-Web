@@ -1,40 +1,105 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test para la prueba</title>
-    <link rel="stylesheet" href="test.css">
+    <title>Prueba</title>
 </head>
+
+<!-- body principal de la pagina -->
 <body>
+<!-- 
+    HEADER: Encabezado principal de la página.
+    - Posición: Va al inicio del <body>.
+    - Uso: Muestra el título y la barra de navegación.
+    - Estilo: Se suele dar fondo, color de texto, y estilos al menú de navegación.
+-->
+<header>
+    <h1>Bienvenido a mi página de prueba</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <header class="header">
-        <h1>Bienvenido al Test, Mi nombre es Felipe</h1>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="#Inicio">Inicio</a></li>
-                <li><a href="#Sobre">Sobre</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- 
+    MAIN: Contenido principal de la página.
+    - Posición: Después del header, dentro del <body>.
+    - Uso: Contiene las secciones principales y el contenido relevante.
+    - Estilo: Se puede usar grid o flexbox para organizar las secciones.
+-->
+<main>
+    <!-- 
+        SECTION: Sección de prueba.
+        - Posición: Dentro de <main>.
+        - Uso: Presenta un título y un párrafo de ejemplo.
+        - Estilo: Margen, padding y tipografía para separar y destacar el contenido.
+    -->
+    <section>
+        <h2>Sección de Prueba</h2>
+        <p>Este es un párrafo de prueba para verificar la estructura básica de una página HTML.</p>
+    </section>
 
-    <main class="main-content">
-        <section class="Inicio">
-            <h2>Bienvenido</h2>
-            <p>Este es un ejemplo de HTML semántico.</p>
-        </section>
+    <!-- 
+        SECTION: Galería de imágenes.
+        - Posición: Dentro de <main>.
+        - Uso: Muestra una galería simple de imágenes.
+        - Estilo: Usar flexbox o grid para alinear imágenes, agregar bordes o sombras.
+    -->
+    <section>
+        <h2>Galería</h2>
+        <div>
+            <img src="https://via.placeholder.com/150" alt="Imagen 1">
+            <img src="https://via.placeholder.com/150" alt="Imagen 2">
+            <img src="https://via.placeholder.com/150" alt="Imagen 3">
+        </div>
+    </section>
 
-        <section class="Sobre">
-            <h2>Sobre mi</h2>
-            <article>
-                <p>Soy un estudiante de la carrera de ing. informatica aprendiendo desarrollo web</p>
-            </article>
-        </section>
-    </main>
+    <!-- 
+        SECTION: Formulario de contacto.
+        - Posición: Dentro de <main>.
+        - Uso: Permite a los usuarios enviar información de contacto.
+        - Estilo: Espaciado entre campos, bordes suaves, colores para botones.
+    -->
+    <section>
+        <h2>Formulario de Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
 
-    <footer>
-        <p>© 2023 Felipe. Todos los derechos reservados.</p>
-    </footer>
+    <!-- 
+        ASIDE: Barra lateral de noticias.
+        - Posición: Dentro de <main>, normalmente al costado del contenido principal.
+        - Uso: Mostrar información adicional como noticias o enlaces.
+        - Estilo: Fondo diferenciado, menor ancho, tipografía más pequeña.
+    -->
+    <aside>
+        <h3>Noticias</h3>
+        <ul>
+            <li>Noticia 1: Actualización importante.</li>
+            <li>Noticia 2: Nuevo servicio disponible.</li>
+        </ul>
+    </aside>
+</main>
 
+<!-- 
+    FOOTER: Pie de página.
+    - Posición: Al final del <body>.
+    - Uso: Información legal o de derechos de autor.
+    - Estilo: Fondo oscuro, texto centrado y pequeño.
+-->
+<footer>
+    <p>&copy; 2024 Mi Página de Prueba</p>
+</footer>
+    
 </body>
 </html>
