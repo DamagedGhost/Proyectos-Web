@@ -101,6 +101,7 @@ a.price {
     margin-top: auto; /* empuja hacia abajo */
 }
 
+/* Efecto hover para el botón de precio */
 a.price:hover {
   background-color: #a83224;
   color: #fff;
@@ -108,6 +109,7 @@ a.price:hover {
   transition: background 0.3s, transform 0.3s;
 }
 
+/* Efecto hover para la tarjeta completa */
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
