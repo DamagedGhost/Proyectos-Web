@@ -101,6 +101,18 @@ a.price {
     margin-top: auto; /* empuja hacia abajo */
 }
 
+a.price:hover {
+  background-color: #a83224;
+  color: #fff;
+  transform: scale(1.05);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 .localImages {
     display: flex;
     gap: 0; /* pegadas entre sí */
